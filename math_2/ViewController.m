@@ -57,9 +57,8 @@ int ourMatrix = 4;
         secondB[i][0] = b[i][0];
 //        matrix[i][0] = 0;
 //        c[i][0] = 0;
-
-//                matrix[i][1] = matrix[i][0];
-//                c[i][1] = matrix[i][0];
+//        matrix[i][1] = matrix[i][0];
+//        c[i][1] = matrix[i][0];
 //        matrix[2][i] = matrix[0][i];
 //        c[2][i] = matrix[0][i];
 //        matrix[3][i] = matrix[0][i];
@@ -137,23 +136,6 @@ int ourMatrix = 4;
             }
         }
     }
-//    for (int h=0; h<ourMatrix; h++) {
-//        sum = 0;
-//        for (int y=0; y<ourMatrix; y++){
-//            sum += c[y][h];
-////            NSLog(@"c:  %f", c[y][h]);
-//        }
-////        NSLog(@"b:   %f", secondB[h][0]);
-//        if (fabs(sum)<0.000006) {
-//            if (secondB[h][0]>0.000006) {
-//                NSLog(@"sistema ne sovmestna");
-//            } else {
-//                NSLog(@"sistema sovmestna");
-//            }
-//        }
-//    }
-    
-    
     
     NSLog(@"pryamoy hod ended");
     
@@ -477,53 +459,6 @@ int ourMatrix = 4;
     for (int h=0; h<ourMatrix; h++) {
         NSLog(@"our proverka Ax-b: %f", proverkaAX[h][0] - b[h][0]);
     }
-//    double m[4][1];
-//    for (int i=0; i<ourMatrix; i++) {
-//        m[i][0] = 1;
-//        x[i][0] = 0;
-//    }
-//    for (int i=0; i<ourMatrix; i++) {
-//        for (int g=0; g<ourMatrix; g++) {
-//            m[g][0] =  m[g][0]*l[i][g];
-//        }
-//        if(i==0){
-//            y[0][0] = 1;}
-//        else {
-//            for (int h=0; h<i; h++) {
-//                y[i][0] = b[i][0]-m[h][0]*y[h][0];
-//            }
-//        }
-//
-//    }
-//
-//    for (int h=0; h<ourMatrix; h++) {
-//            NSLog(@"our y: %f", y[h][0]);
-//    }
-//
-//
-//
-//
-//    for (int i=0; i<ourMatrix; i++) {
-//        m[i][0] = 1;
-//    }
-//    for (int i=ourMatrix-1; i>=0; i--) {
-//        for (int g=ourMatrix-1; g>=0; g--) {
-//            m[g][0] =  m[g][0]*u[i][g];
-//        }
-//        if(i==3){
-//            x[3][0] = 1;}
-//        else {
-//            for (int h=ourMatrix-1; h>i; h--) {
-//                x[i][0] = y[i][0]-m[h][0]*x[h][0];
-//            }
-//        }
-//
-//    }
-//
-//
-//    for (int h=0; h<ourMatrix; h++) {
-//        NSLog(@"our x: %f", x[h][0]);
-//    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
